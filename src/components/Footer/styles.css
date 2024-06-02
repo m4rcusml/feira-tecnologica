@@ -1,0 +1,25 @@
+.footer {
+    background-image: linear-gradient(to right, #000406, #1f343e);
+    padding: 3em 8%;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    gap: 4em;
+    border-bottom: 1em solid #6AB5AE;
+}
+
+.footer > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    min-width: 250px;
+}
+
+.footer > div > img {
+    width: 100%;
+    height: auto;
+}
