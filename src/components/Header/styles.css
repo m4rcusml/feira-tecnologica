@@ -19,15 +19,46 @@
     gap: 2em;
 }
 
-.menu > a {
+.menu-mobile-container {
+    background-image: linear-gradient(to right, #000406, #1f343e);
+    padding: 1em 8%;
+    animation: openHeader 500ms;
+}
+
+.menu-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    gap: 2em;
+    padding: 1em 0;
+    overflow: hidden;
+    animation: openHeader 500ms;
+}
+
+.menu-link {
     text-decoration: none;
     color: #fff;
     font-size: 1.1em;
+    border-bottom: 2px solid transparent;
 }
 
-.menu > a:hover {
+.menu-link:hover {
     color: #5ce1d4;
     border-bottom: 2px solid #5ce1d4;
+}
+
+.menu-button {
+    cursor: pointer;
+}
+
+.menu-button.openned {
+    animation: appear 200ms;
+}
+
+.menu-button.closed {
+    animation: disappear 200ms;
 }
 
 .header-button {
@@ -48,4 +79,31 @@
 
 .header-button:hover {
     background-color: #5ce1d4;
+}
+
+@keyframes openHeader {
+    from {
+        height: 0;
+        padding: 0;
+    }
+}
+
+@keyframes appear {
+    from {
+        transform: rotate(180deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes disappear {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
 }

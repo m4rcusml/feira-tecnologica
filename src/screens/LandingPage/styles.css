@@ -32,6 +32,12 @@
     gap: 2em;
 }
 
+@media screen and (max-width: 960px) {
+    #presentation > div {
+        min-width: 300px;
+    }
+}
+
 #presentation > div > img {
     width: 100%;
 }
