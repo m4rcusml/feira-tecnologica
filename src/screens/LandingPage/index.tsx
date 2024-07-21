@@ -1,5 +1,3 @@
-import { Button } from '../../components/Button';
-
 import PresentationCapa from '../../assets/presentation.png';
 import LogoFeira from '../../assets/logo_feira.png';
 import './styles.css';
